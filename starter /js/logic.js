@@ -1,0 +1,1 @@
+var questionsEl = document.querySelector("#questions")
