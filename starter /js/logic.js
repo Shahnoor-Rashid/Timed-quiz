@@ -70,6 +70,9 @@ startQuiz.addEventListener('click', function () {
   
 })
 
+var sfxRight = new Audio("assets/sfx/correct.wav");
+var sfxWrong = new Audio("assets/sfx/incorrect.wav");
+
 function compareAnswer(ans) {
   if (q >= questions.length) {
     gameOver();
@@ -80,12 +83,15 @@ function compareAnswer(ans) {
         response = document.createElement('h2');
         response.innerText='Correct!!!'
         questionCard.append(response);
+        sfxRight.play();
+        
         
     } else {
         response = document.createElement('h2');
         response.innerText='Wrong Answer!!!'
         questionCard.append(response);
         timeLeft -= 10;
+        sfxWrong.play();
     }
 
     score = timeLeft;
