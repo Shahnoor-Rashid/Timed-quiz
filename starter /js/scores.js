@@ -29,3 +29,9 @@ function removeAllChildNodes(parent) {
         parent.removeChild(parent.firstChild);
     }
 }
+function getScore() {
+    var storedScore = JSON.parse(localStorage.getItem("highScore"));
+    if (storedScore !== null) {
+        scoreList = storedScore;
+    }
+}
