@@ -22,6 +22,7 @@ Please see below.
 
 To access the website, please click the link below.
 (https://shahnoor-rashid.github.io/Timed-quiz/)
+(http://127.0.0.1:5500/starter%20%20/index.html)
 
 ## Usage
 
