@@ -35,3 +35,25 @@ function getScore() {
         scoreList = storedScore;
     }
 }
+
+// function handleGoBack() {
+//     window.open("index.html");
+// }
+
+function handleClear() {
+    scoreList = [];
+    // start.classList.add("hide");
+    localStorage.setItem("highScore", JSON.stringify(scoreList));
+    location.reload()
+    addToLeaderBoard()
+}
+
+function showHighScores() {
+    // questionCard.classList.add('hide')
+    // mainTag.classList.add('hide')
+    scoreBoard();
+    scoreCard.classList.remove('hide')
+
+}
+scoreBoard()
+showHighScores()

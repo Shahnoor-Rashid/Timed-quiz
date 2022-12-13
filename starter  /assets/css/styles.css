@@ -86,3 +86,10 @@ li:nth-child(odd) {
   top: 10px;
   right: 10px;
 }
+
+#highscores div{
+  background-color: #f3edfc;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}

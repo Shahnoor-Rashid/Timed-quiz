@@ -1,4 +1,4 @@
-
+//Global variables//
 var questionsEl = document.querySelector("#questions")
 var questionHeader = document.querySelector("#question-title");
 const questionCard = document.querySelector('#question-card');
@@ -70,9 +70,6 @@ startQuiz.addEventListener('click', function () {
   
 })
 
-var sfxRight = new Audio("assets/sfx/correct.wav");
-var sfxWrong = new Audio("assets/sfx/incorrect.wav");
-
 function compareAnswer(ans) {
   if (q >= questions.length) {
     gameOver();
@@ -83,15 +80,12 @@ function compareAnswer(ans) {
         response = document.createElement('h2');
         response.innerText='Correct!!!'
         questionCard.append(response);
-        sfxRight.play();
-        
         
     } else {
         response = document.createElement('h2');
         response.innerText='Wrong Answer!!!'
         questionCard.append(response);
         timeLeft -= 10;
-        sfxWrong.play();
     }
 
     score = timeLeft;
@@ -109,9 +103,7 @@ questionsEl.addEventListener('click', (event) => {
   compareAnswer(event.target.innerText)
 })
 
-function myFunc(){
-  window.open("../highscores.html");
-}
+
 
 submit.addEventListener("click", function (event) {
   event.preventDefault();
@@ -122,7 +114,7 @@ submit.addEventListener("click", function (event) {
   };
   saveScore(newScore);
   over.classList.add("hide");
-  myFunc()
+  window.open("highscores.html");
   scoreBoard();
 });
 
@@ -152,6 +144,4 @@ function saveScore(newScore) {
   }
   
 }  
-
-
 
