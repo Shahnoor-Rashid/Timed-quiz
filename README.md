@@ -1,4 +1,4 @@
-# TIMED QUIZ
+
 
 # Timed quiz
 
