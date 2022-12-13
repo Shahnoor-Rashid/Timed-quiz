@@ -21,7 +21,7 @@ Please see below.
 ## Installation
 
 To access the website, please click the link below.
-(https://shahnoor-rashid.github.io/Timed-quiz/)
+[website](https://shahnoor-rashid.github.io/Timed-quiz/)
 
 ## Usage
 
