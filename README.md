@@ -30,9 +30,9 @@ To start the game press "Start" button and follow the game. At the end you can p
 ## Credits
 
 Tutorial : 
-www.w3schools.com
-www.javascript.info
-www.youtube.com
+www.w3schools.com<br>
+www.javascript.info<br>
+www.youtube.com<br>
 www.stackoverflow.coss1
 
 
