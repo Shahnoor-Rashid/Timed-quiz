@@ -83,14 +83,15 @@ function compareAnswer(ans) {
         console.log("Correct Answer");
         response = document.createElement('h2');
         response.innerText='Correct!!!'
-        questionCard.append(response);
         sfxRight.play();
+        questionCard.append(response);
+        
         
     } else {
         response = document.createElement('h2');
         response.innerText='Wrong Answer!!!'
-        questionCard.append(response);
         sfxWrong.play();
+        questionCard.append(response);
         timeLeft -= 10;
     }
 
