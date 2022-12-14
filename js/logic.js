@@ -70,8 +70,8 @@ startQuiz.addEventListener('click', function () {
   
 })
 
-var sfxRight = new Audio("../assets/sfx/correct.wav");
-var sfxWrong = new Audio("../assets/sfx/incorrect.wav");
+var sfxRight = new Audio("./assets/sfx/correct.wav");
+var sfxWrong = new Audio("./assets/sfx/incorrect.wav");
 
 
 function compareAnswer(ans) {
